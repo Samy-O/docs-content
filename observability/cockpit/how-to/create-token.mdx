@@ -16,12 +16,20 @@ dates:
 This page shows you how to create [tokens](/observability/cockpit/concepts/#tokens), to grant other cloud providers’ services and platforms access to your [Cockpit](/observability/cockpit/concepts/#cockpit).
 
 <Macro id="requirements" />
+<<<<<<< HEAD
  
 <Message type="requirement">
  - You have an account and are logged into the [Scaleway console](https://console.scaleway.com)
  - You have activated your [Cockpit](/observability/cockpit/how-to/activate-cockpit)
  - You have [activated traces](/observability/cockpit/how-to/activate-push-traces) if you want to create a token to push [traces](/observability/cockpit/concepts/#traces)
 </Message>
+=======
+
+  - A Scaleway account logged into the [console](https://console.scaleway.com)
+  - [Owner](/identity-and-access-management/iam/concepts/#owner) status or [IAM permissions](/identity-and-access-management/iam/concepts/#permission) allowing you to perform actions in the intended Organization
+  - You have [activated traces](/observability/cockpit/how-to/activate-push-traces) if you want to create a token to push [traces](/observability/cockpit/concepts/#traces)
+
+>>>>>>> ca24a23a (add(docs): last add)
 
 
 1. Click **Cockpit** in the Observability section of the [console](https://console.scaleway.com/) side menu. The **Cockpit** overview page displays.
@@ -36,15 +44,13 @@ This page shows you how to create [tokens](/observability/cockpit/concepts/#toke
     <Message type="important">
     You must select at least one permission.
     Permissions include:
-    - **Push**: allows you to send your metrics, logs and traces to your Cockpit.
-    - **Query**: allows you to fetch your metrics, logs and traces from your Cockpit.
+    - **Push**: allows you to send your metrics, logs, and traces to your Cockpit.
+    - **Query**: allows you to fetch your metrics, logs, and traces from your Cockpit.
     - **Rules**: allow you to configure alerting and recording rules.
     - **Alerts**: allow you to set up the alert manager.
     </Message>
 7. Click **Create token** to confirm. A pop-up displays with your secret key. Make sure that you save the secret key before closing the pop-up.
 
-
-Your newly-created token displays in the list of your tokens.
 
 <Message type="important">
  - Having the default configuration on your agents might lead to more of your resources' metrics being sent, a high consumption, and a high bill at the end of the month.
@@ -53,5 +59,5 @@ Your newly-created token displays in the list of your tokens.
 
 <Navigation title="See also">
   <PreviousButton to="/observability/cockpit/how-to/retrieve-grafana-credentials/">How to retrieve your Grafana credentials</PreviousButton>
-  <NextButton to="/observability/cockpit/how-to/access-grafana-and-managed-dashboards/">How to access Grafana and your managed dashboards</NextButton>
+  <NextButton to="/observability/cockpit/how-to/enable-alert-manager/">How to enable the alert manager</NextButton>
 </Navigation>

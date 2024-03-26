@@ -24,7 +24,7 @@ This page shows you how to use [Load Balancer flexible IP addresses](/network/lo
 The following limitations apply to Load Balancer flexible IPs:
 - A public Load Balancer must have an IPv4 address, and optionally an IPv6 address as well. It cannot have only an IPv6 address.
 - You cannot currently change the flexible IP address of an existing Load Balancer, that is to say you cannot detach its flexible IP after creation to attach a different one. You can attach a flexible IPv6 to a Load Balancer that does not already have one, but you cannot modify or change this address once attached.
-- Flexible IPs are associated with a particular product and cannot be moved to a different type of resource. For example, a flexible IP for Load Balancer can be used with another Load Balancer, but it cannot be used with other resource types like Instances or Elastic Metal servers.
+- Flexible IPs are associated with a particular product and cannot be moved to a different type of resource. For example, a flexible IP for one Load Balancer can be used with another Load Balancer, but it cannot be used with other resource types like Instances or Elastic Metal servers.
 </Message>
 
 <Macro id="iam-requirements" />
@@ -52,7 +52,7 @@ When you create a Load Balancer, the creation wizard lets you create a new flexi
 
 4. Choose the **Availability Zone** you want to create your flexible IP in. 
 
-5. Select a **protocol** for the flexible IP address: either IPv4 or IPv6.
+5. Select a **protocol** for the flexible IP address: either [IPv4](/network/load-balancer/concepts/#ipv4 or [IPv6](/network/load-balancer/concepts/#ipv6.
 
 6. Check the estimated cost, and click **Create flexible IP**.
 
